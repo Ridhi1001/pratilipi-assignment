@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^6.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^5.10.9"
+  },
+  "name": "pratilipi_assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:user & npm run start:product & npm run start:order",
+    "start:user": "cd user-service/src && npm install && node index.js",
+    "start:product": "cd product-service/src && npm install && node index.js",
+    "start:order": "cd order-service/src && npm install && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
