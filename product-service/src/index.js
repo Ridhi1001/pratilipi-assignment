@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use('/products', productRoutes);
 
-mongoose.connect('mongodb://127.0.0.1:27017/', {
+mongoose.connect('mongodb://127.0.0.1:27017/productdb', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
